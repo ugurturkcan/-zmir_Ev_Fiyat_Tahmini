@@ -19,7 +19,7 @@ st.markdown("<h1 style='text-align: center; color: #336699;'>🏠 Ev Fiyat Tahmi
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Model pipeline'ını yükle
-model = pickle.load(open("model_pipeline.pkl", "rb"))  # pipeline + model birlikte picklelanmış olmalı
+model = pickle.load(open("model_ev_fiyat.pkl", "rb"))  # pipeline + model birlikte picklelanmış olmalı
 
 @st.cache_data
 def get_izmir_districts():
