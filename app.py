@@ -14,9 +14,33 @@ import pickle
 import requests
 
 # Sayfa ayarları
-st.set_page_config(page_title="Ev Fiyat Tahmini", page_icon="🏠", layout="centered")
-st.markdown("<h1 style='text-align: center; color: #336699;'>🏠 Ev Fiyat Tahmini Aracı</h1>", unsafe_allow_html=True)
+st.set_page_config(page_title=" İzmir'de Ev Fiyat Tahmini", page_icon="🏠", layout="centered")
+st.markdown("<h1 style='text-align: center; color:rgb(246, 250, 253);'>🏠 İzmir'de Ev Fiyat Tahmini Aracı</h1>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
+
+
+st.markdown(
+    """
+    <style>
+    /* Arka plan resmi */
+    body {
+        background-image: url("https://blog.corendonairlines.com/wp-content/uploads/2024/04/izmir01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+
+    /* İçeriğin daha okunur olması için yarı saydam arka plan */
+    .stApp {
+        background-color: rgba(132, 133, 130, 0.85);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Model pipeline'ını yükle
 model = pickle.load(open("model_pipeline.pkl", "rb"))  # pipeline + model birlikte picklelanmış olmalı
