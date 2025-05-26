@@ -21,16 +21,14 @@ st.markdown("<hr>", unsafe_allow_html=True)
 st.markdown(
     """
     <style>
-    /* Tüm uygulama için arka plan resmi */
     .stApp {
-        background-image: url("https://blog.corendonairlines.com/wp-content/uploads/2024/04/izmir01.jpg");
+        background: 
+            linear-gradient(rgba(132, 133, 130, 0.6), rgba(132, 133, 130, 0.6)), 
+            url("https://blog.corendonairlines.com/wp-content/uploads/2024/04/izmir01.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: scroll;
 
-        /* Arka planın üstüne yarı saydam bir renk katmanı */
-        background-color: rgba(132, 133, 130, 0.20); /* Saydam gri ton */
         padding: 2rem;
         border-radius: 15px;
     }
@@ -38,6 +36,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 
 
