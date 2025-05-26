@@ -30,7 +30,7 @@ st.markdown(
         background-attachment: scroll;
 
         /* Arka planın üstüne yarı saydam bir renk katmanı */
-        background-color: rgba(132, 133, 130, 0.40); /* Saydam gri ton */
+        background-color: rgba(132, 133, 130, 0.20); /* Saydam gri ton */
         padding: 2rem;
         border-radius: 15px;
     }
