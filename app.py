@@ -18,6 +18,30 @@ st.set_page_config(page_title=" İzmir'de Ev Fiyat Tahmini", page_icon="🏠", l
 st.markdown("<h1 style='text-align: center; color:rgb(246, 250, 253);'>🏠 İzmir'de Ev Fiyat Tahmini Aracı</h1>", unsafe_allow_html=True)
 st.markdown("<hr>", unsafe_allow_html=True)
 
+st.markdown(
+    """
+    <style>
+    /* Arka plan resmi */
+    .stApp {
+        background-image: url("https://blog.corendonairlines.com/wp-content/uploads/2024/04/izmir01.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* İçeriğin okunabilirliği için saydam içerik kutuları */
+    div.block-container {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 2rem;
+        border-radius: 15px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
 
 
 
